@@ -12,6 +12,8 @@ jobs:
       - checkout
       - python/install-packages:
           pkg-manager: pipenv
+          pre-install-steps:
+            - run: rm .python-version
       - run:
           command: |
             pipenv run along
