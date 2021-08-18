@@ -32,7 +32,7 @@ We simply use the right and specific Python runtime required. In this CircleCI c
 
 This is in line with Pipenv's behaviour since Pipenv will thus be installed in this specified Python version.
 
-See PR #1
+See https://github.com/mt-kelvintaywl/circleci-python-orb-pyenv-conflict-demo/pull/1
 
 ### Solution 2
 
@@ -45,4 +45,4 @@ When newer 3.8.x versions for Python are available with the `cimg/python` Docker
 We should strive to keep the CI build the same as what is intended in the production environment, and ideally for local environment too.
 > Of course, with semantic versioning, we trust that packages installed on any Python 3.8.x should still work.
 
-See PR #2
+See https://github.com/mt-kelvintaywl/circleci-python-orb-pyenv-conflict-demo/pull/2
