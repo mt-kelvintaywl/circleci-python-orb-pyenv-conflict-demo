@@ -7,7 +7,7 @@ jobs:
   greet:
     executor:
       name: python/default
-      tag: '3.8'
+      tag: '3.8.6'
     steps:
       - checkout
       - python/install-packages:
