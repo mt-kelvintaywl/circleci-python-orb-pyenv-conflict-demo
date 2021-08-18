@@ -1,0 +1,22 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.4.0
+
+jobs:
+  greet:
+    executor:
+      name: python/default
+      tag: '3.8'
+    steps:
+      - checkout
+      - python/install-packages:
+          pkg-manager: pipenv
+      - run:
+          command: |
+            pipenv run along
+
+workflows:
+  showcase:
+    jobs:
+      - greet
